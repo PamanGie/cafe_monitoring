@@ -90,7 +90,7 @@ class CafeMonitoring:
                     
                 track_id = track.track_id
                 ltrb = track.to_ltrb()
-                class_name = track.det_class  # Menggunakan det_class alih-alih get_class()
+                class_name = track.det_class  # Menggunakan det_class 
                 
                 # Store track data
                 if track_id not in self.tracks_data:
@@ -116,11 +116,11 @@ class CafeMonitoring:
                 duration = (frame_count - self.tracks_data[track_id]['start_frame']) / fps
                 
                 # Draw labels
-                if class_name == "Barista":
+                if class_name == "Barista": #you can use any class name you want based on your YOLO Object Class
                     label = f"#{track_id} {class_name}"
                     info = f"Work: {duration:.1f}s"
                 else:
-                    label = f"#{track_id} Customer"
+                    label = f"#{track_id} Customer" #you can use any class name you want based on your YOLO Object Class
                     info = f"Wait: {duration:.1f}s"
                 
                 cv2.putText(frame, label, (x1, y1-25), 
@@ -160,8 +160,8 @@ class CafeMonitoring:
         
         # Print summary
         print("\nTracking Summary:")
-        print(f"Total Baristas: {len(df[df['class_name'] == 'Barista'])}")
-        print(f"Total Customers: {len(df[df['class_name'] == 'person'])}")
+        print(f"Total Baristas: {len(df[df['class_name'] == 'Barista'])}") #you can use any class name you want based on your YOLO Object Class
+        print(f"Total Customers: {len(df[df['class_name'] == 'person'])}") #you can use any class name you want based on your YOLO Object Class
         print(f"Average Customer Wait Time: {df[df['class_name'] == 'person']['duration_seconds'].mean():.2f} seconds")
 
 def main():
