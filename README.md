@@ -58,3 +58,11 @@ The system generates:
 
 - YOLO by Ultralytics
 - DeepSORT Real-time Object Tracking
+- Laura Angelia (https://www.youtube.com/watch?v=wz0pvSFSW2A&t=309s) - Kindly Subscribe Her Channel! 
+
+- ## Note
+- Please use your own YOLO Model (This AI Compatible to YOLOv8 to YOLO11 model)
+- You should use your own Video to Track
+
+# Result
+![Tracking Result](https://i.postimg.cc/GhCjvcB4/vlcsnap-2024-12-21-19h03m34s586.png "Cafe Service Tracking")
