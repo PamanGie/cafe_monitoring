@@ -60,7 +60,7 @@ The system generates:
 - DeepSORT Real-time Object Tracking
 - Laura Angelia (https://www.youtube.com/watch?v=wz0pvSFSW2A&t=309s) - Kindly Subscribe Her Channel! 
 
-- ## Note
+## Note
 - Please use your own YOLO Model (This AI Compatible to YOLOv8 to YOLO11 model)
 - You should use your own Video to Track
 
